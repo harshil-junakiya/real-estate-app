@@ -22,6 +22,7 @@ app.use('/api/user', userRouter)
 
 app.use(express.json());
 
+app.use('/api/auth', userRouter)
 app.use('/api/auth', authRouter)
 
 app.use((err, req, res, next)=>{
