@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-    } 
+    },
+    avatar: {
+        type: String,
+        default: "https://w0.peakpx.com/wallpaper/979/89/HD-wallpaper-purple-smile-design-eye-smily-profile-pic-face-thumbnail.jpg",
+    }, 
 }, {timestamps: true});
 
 const User = mongoose.model('User', userSchema);
