@@ -1,5 +1,5 @@
 import React from 'react'
-import { UseSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Outlet, Navigate } from 'react-router-dom'
 
 export default function PrivateRoute() {
@@ -8,3 +8,4 @@ export default function PrivateRoute() {
     currentUser ? <Outlet /> : <Navigate to='/signin' />
   )
 }
+  
